@@ -7,14 +7,14 @@ int main(){
 
     for(int i = 1; i <= n; i++)
     {
-        char c = 'A';
-        for(int j = 1; j <= n; j++)
+        char ch = 'A';
+        for(int j = 1; j <= i; j++)
         {
-            char ch = c + j + i - 2;
-            cout << ch << " ";
+            cout << char(ch + n - j) << " ";
         }
         cout << endl;
     }
+
 
     return 0;
 }
