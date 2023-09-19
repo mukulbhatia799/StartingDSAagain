@@ -7,17 +7,17 @@ int main(){
 
     for(int i = 1; i <= n; i++)
     {
-        for(int j = 1; j <= n-i; j++)
+        for(int j = i; j <= n; j++)
         {
-            cout << "  ";
+            cout << j-i+1 << " ";
         }
-        for(int j = 1; j <= i; j++)
+        for(int j = 1; j <= 2*i-2; j++)
         {
-            cout << j << " ";
+            cout << "* ";
         }
-        for(int j = 1; j < i; j++)
+        for(int j = 1; j <= n-i+1; j++)
         {
-            cout << i - j << " ";
+            cout << n-j-i+2 << " ";
         }
         cout << endl;
     }
