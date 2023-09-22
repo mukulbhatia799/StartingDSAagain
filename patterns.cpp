@@ -5,11 +5,13 @@ int main(){
     int n;
     cin >> n;
 
-    for(int i = 1; i <= n; i++)
+    for(int i = 1; i <= n; i++) // i = 2
     {
-        for(int j = 1; j <= n-i+1; j++)
+        for(int j = 1; j <= n; j++) // j = 2
         {
-            cout << "* ";
+            if(i == 1 || j == 1 || j == n-i+1)
+                cout << "* ";
+            else cout << "  ";
         }
         cout << endl;
     }
